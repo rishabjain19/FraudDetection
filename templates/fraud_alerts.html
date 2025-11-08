@@ -3,7 +3,7 @@ System{% endblock %} {% block content %}
 <div class="container">
   <div class="card">
     <div class="page-header">
-      <h1>🚨 Fraud Alerts</h1>
+      <h1>Fraud Alerts</h1>
       <p class="subtitle">
         Suspicious transactions detected by our automated system
       </p>
@@ -63,7 +63,7 @@ System{% endblock %} {% block content %}
     </div>
 
     <div class="fraud-summary">
-      <h3>📊 Fraud Detection Summary</h3>
+      <h3>Fraud Detection Summary</h3>
       <div class="summary-grid">
         <div class="summary-item">
           <span class="summary-label">Total Alerts</span>
@@ -90,7 +90,7 @@ System{% endblock %} {% block content %}
     </div>
     {% else %}
     <div class="empty-state success-state">
-      <h2>✅ All Clear!</h2>
+      <h2>All Clear!</h2>
       <p>No suspicious transactions detected. Your system is secure.</p>
       <a href="{{ url_for('add_transaction') }}" class="btn btn-primary"
         >Add Transaction</a
