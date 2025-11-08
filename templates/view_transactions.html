@@ -3,9 +3,9 @@ System{% endblock %} {% block content %}
 <div class="container">
   <div class="card">
     <div class="page-header">
-      <h1>📋 All Transactions</h1>
+      <h1>All Transactions</h1>
       <a href="{{ url_for('add_transaction') }}" class="btn btn-primary"
-        >➕ Add New Transaction</a
+        >Add New Transaction</a
       >
     </div>
 
@@ -50,14 +50,14 @@ System{% endblock %} {% block content %}
               <a
                 href="{{ url_for('update_transaction', transaction_id=txn.transaction_id) }}"
                 class="btn btn-small btn-edit"
-                >✏️ Edit</a
+                >Edit</a
               >
               <a
                 href="{{ url_for('delete_transaction', transaction_id=txn.transaction_id) }}"
                 class="btn btn-small btn-delete"
                 onclick="return confirm('Are you sure you want to delete this transaction?');"
               >
-                🗑️ Delete</a
+                Delete</a
               >
             </td>
           </tr>
@@ -78,7 +78,7 @@ System{% endblock %} {% block content %}
     {% else %}
     <div class="empty-state">
       <p>
-        📭 No transactions found.
+        No transactions found.
         <a href="{{ url_for('add_transaction') }}"
           >Add your first transaction</a
         >
