@@ -5,7 +5,7 @@
 {% block content %}
 <div class="container">
     <div class="card">
-        <h1>✏️ Edit Transaction</h1>
+        <h1>Edit Transaction</h1>
         <p class="form-description">Update the transaction details below. Fraud detection will re-run automatically.</p>
         
         <form method="POST" action="{{ url_for('update_transaction', transaction_id=transaction.transaction_id) }}" class="transaction-form">
